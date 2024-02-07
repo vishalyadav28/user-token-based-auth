@@ -1,0 +1,9 @@
+python3 -m venv auth_proj
+pip3 install django
+django-admin startproject core
+python3 manage.py startapp users
+pip3 install graphene-django
+pip3 install django-graphql-jwt
+pip3 install django-graphql-auth
+python3 manage.py makemigrations
+python3 manage.py migrate
